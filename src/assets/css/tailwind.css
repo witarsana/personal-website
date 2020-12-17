@@ -1,0 +1,342 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Niramit&display=swap');
+
+@media (min-width: 1281px) {
+    #grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        grid-template-areas: "g1 g2 g3 g3 g4 g4 g5" "g6 g2 g7 g7 g4 g4 g5" "g6 g8 g7 g7 g9 g10 g10";
+    }
+    
+    .g1 { grid-area: g1; }
+    
+    .g2 { grid-area: g2; }
+    
+    .g3 { grid-area: g3; }
+    
+    .g4 { grid-area: g4; }
+    
+    .g5 { grid-area: g5; }
+    
+    .g6 { grid-area: g6; }
+    
+    .g7 { grid-area: g7; }
+    
+    .g8 { grid-area: g8; }
+    
+    .g9 { grid-area: g9; }
+    
+    .g10 { grid-area: g10; }
+    
+    
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+
+  
+  @media (min-width: 768px) and (max-width: 1280px) {
+    
+    #grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        grid-template-areas: "g1 g2 g3 g3 g4 g4 g5" "g6 g2 g7 g7 g4 g4 g5" "g6 g8 g7 g7 g9 g10 g10";
+    }
+    
+    .g1 { grid-area: g1; }
+    
+    .g2 { grid-area: g2; }
+    
+    .g3 { grid-area: g3; }
+    
+    .g4 { grid-area: g4; }
+    
+    .g5 { grid-area: g5; }
+    
+    .g6 { grid-area: g6; }
+    
+    .g7 { grid-area: g7; }
+    
+    .g8 { grid-area: g8; }
+    
+    .g9 { grid-area: g9; }
+    
+    .g10 { grid-area: g10; }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    
+    #grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        grid-template-areas: "g1 g3" "g8 g4" "g5 g10";
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .g1 { grid-area: g1; }
+    
+    .g2 { grid-area: g2; display: none;}
+    
+    .g3 { grid-area: g3; }
+    
+    .g4 { grid-area: g4; }
+    
+    .g5 { grid-area: g5;}
+    
+    .g6 { grid-area: g6; display: none;}
+    
+    .g7 { grid-area: g7; display: none;}
+    
+    .g8 { grid-area: g8;
+        
+    }
+    
+    .g9 { grid-area: g9; display: none;}
+    
+    .g10 { grid-area: g10; }
+    
+  }
+
+
+#menu1_container {
+    position: relative;
+    z-index: 1;
+}
+#menu1_container {
+    perspective: 1000;
+}
+#menu1_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+#menu1_container:hover #menu1_card {
+    transform: rotateY(180deg);
+}
+
+/*  */
+
+#menu2_container {
+    position: relative;
+    z-index: 1;
+}
+#menu2_container {
+    perspective: 1000;
+}
+#menu2_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+#menu2_container:hover #menu2_card {
+    transform: rotateY(180deg);
+}
+/*  */
+
+#menu3_container {
+    position: relative;
+    z-index: 1;
+}
+#menu3_container {
+    perspective: 1000;
+}
+#menu3_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+#menu3_container:hover #menu3_card {
+    transform: rotateY(180deg);
+}
+
+/*  */
+
+#menu4_container {
+    position: relative;
+    z-index: 1;
+}
+#menu4_container {
+    perspective: 1000;
+}
+#menu4_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+#menu4_container:hover #menu4_card {
+    transform: rotateY(180deg);
+}
+
+/*  */
+
+#menu5_container {
+    position: relative;
+    z-index: 1;
+}
+#menu5_container {
+    perspective: 1000;
+}
+#menu5_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+#menu5_container:hover #menu5_card {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.face.back {
+    transform: rotateY(180deg);
+    background-color: #EF6363;
+}
+
+.showmenu-enter-active {
+    animation: show-menu .3s;
+}
+
+.showmenu-leave-active {
+    animation: show-menu .10s reverse;
+}
+
+@keyframes show-menu {
+    
+    0% {
+        transform: scale(0);
+        opacity: 0.4;
+    }
+
+    25%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(0.75);
+        opacity: 0.6;
+    }
+
+    75%{
+        transform: scale(0.85);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 767px){
+    .showcontent-enter-active{
+        animation: show-content .3s;
+    }
+    
+    .showcontent-leave-active{
+        animation: show-content .3s reverse;
+    }
+    
+    @keyframes show-content{
+        0% {
+            transform: scale(0);
+            opacity: 0.4;
+        }
+    
+        25%{
+            transform: scale(0.5);
+            opacity: 0.5;
+        }
+    
+        50% {
+            transform: scale(0.75);
+            opacity: 0.6;
+        }
+    
+        75%{
+            transform: scale(0.85);
+            opacity: 0.7;
+        }
+    
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+.header-right .logos {
+    transition : transform 2s;
+    transition-timing-function: ease-in;
+}
+
+.header-right:hover .logos{
+    transform: rotate(720deg);
+}
+
+/* Let's get this party started */
+.project::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+.project::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+.project::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(248, 138, 138); 
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+.project::-webkit-scrollbar-thumb:window-inactive {
+	background: rgb(248, 138, 138); 
+}
+.content-wrapper:hover .menu-name{
+    transform: translateX(5px);
+    border-color: #808080;
+    color: #808080;
+}
+.menu-name{
+    transition: transform .2s ease-in-out;
+}
+
+
