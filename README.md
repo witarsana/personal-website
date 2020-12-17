@@ -1,4 +1,6 @@
-# This is my personal website
+# Personal Website
+
+This is my personal website, build using Vue JS and tailwind
 
 ## Project setup
 ```
